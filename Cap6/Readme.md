@@ -16,8 +16,12 @@ cd ~/Livro-SegIoT/Cap6
 java -jar ./leshan-server-demo.jar
 ```
 
+Abra um navegador e acesse o endereço: **http://localhost:8080**
+
 Para iniciar o Leshan Client (que simula um dispositivo IoT), execute:
 ```
 cd ~/Livro-SegIoT/Cap6
 java -jar ./leshan-client-demo.jar
 ```
+
+Depois de iniciar o Leshan Client, observe no navegador que é exibido na listagem um novo cliente. Para verificar as opções, clique no nome do cliente no navegador.
