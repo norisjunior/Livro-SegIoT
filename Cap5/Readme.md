@@ -10,7 +10,7 @@ Nesse exemplo, é necessário abrir três terminais:
 
 Para isso, é necessário instalar os softwares python3 e mosquitto-clients, e os pacotes paho-mqtt e pycryptodome, usando os seguintes comandos:
 ```
-sudo apt install python3 mosquitto-clients
+sudo apt install python3 mosquitto-clients python3-pip
 pip install paho-mqtt pycryptodome
 ```
 
