@@ -22,7 +22,7 @@ Depois, abra um terminal para observar as mensagens que trafegam no Broker (***A
 ##### Terminal 1:
 ```
 cd ~/Livro-SegIoT/Cap5/
-mosquitto_sub -t "/livrosegiot/#"
+mosquitto_sub -t "/livrosegiot/#" -h broker.emqx.io -v
 ```
 
 ##### Terminal 2 (que receberá a mensagem):
