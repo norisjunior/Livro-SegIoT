@@ -74,5 +74,5 @@ curl -iX POST \
 
 ## Recuperar a informação (ação executada por uma aplicação usando a API fornecida pela plataforma FIWARE)
 ```
-curl -X GET http://localhost:1026/v2/entities/temperature_amazon_rainforest_3303?type=LM35&options=keyValues | python -m json.tool
+curl -X GET http://localhost:1026/v2/entities/temperature_amazon_rainforest_3303?type=LM35 | python -m json.tool
 ```
