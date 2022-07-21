@@ -18,7 +18,7 @@ sudo ./services start
 
 ##### Conferindo se o IoT Agent para MQTT está em funcionamento:
 ```
-curl -X GET 'http://localhost:4041/iot/about'
+curl -X GET 'http://localhost:4041/iot/about' | python -m json.tool
 ```
 
 ## Provisionando tipo de entidade
@@ -37,7 +37,7 @@ sudo ./provisiona-sensor-temperatura.sh
 curl -X GET \
   'http://localhost:1026/v2/entities/Dispositivo001?type=Notebook' \
   -H 'fiware-service: openiot' \
-  -H 'fiware-servicepath: /'
+  -H 'fiware-servicepath: /' | python -m json.tool
 ```
 
 ## Dispositivo simulado envia medição de temperatura:
@@ -50,5 +50,5 @@ sudo ./dispositivo-envia-medicao.sh
 curl -X GET \
   'http://localhost:1026/v2/entities/Dispositivo001?type=Notebook' \
   -H 'fiware-service: openiot' \
-  -H 'fiware-servicepath: /'
+  -H 'fiware-servicepath: /' | python -m json.tool
 ```
